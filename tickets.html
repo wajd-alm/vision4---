@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Smart Seat</title>
+    <style>
+        body {
+            background-image: url('Wajdp.png'); /* الخلفية */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column; /* ترتيب العناصر عمودياً */
+            align-items: center; /* توسيط العناصر أفقيًا */
+            justify-content: center; /* توسيط العناصر عموديًا */
+            height: 100vh; /* جعل الحاوية تأخذ كامل ارتفاع الشاشة */
+            text-align: center; /* توسيط النص */
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        label {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        select, button {
+            font-size: 16px;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        select {
+            width: 200px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Book Your Smart Seat</h1>
+        <label for="match">Choose a match:</label>
+        <select id="match">
+            <option value="teamA_vs_teamB">Team A vs Team B</option>
+            <option value="teamC_vs_teamD">Team C vs Team D</option>
+            <option value="teamE_vs_teamF">Team E vs Team F</option>
+        </select>
+        <button>Book Now</button>
+    </div>
+</body>
+</html>

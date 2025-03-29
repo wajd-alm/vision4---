@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants</title>
+    <style>
+        body {
+            background-image: url('Wajdp.png');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        select, button {
+            font-size: 18px;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Select a Restaurant</h1>
+        <label for="restaurant">Choose a restaurant:</label>
+        <select id="restaurant">
+            <option value="pizza">Pizza Restaurant</option>
+            <option value="burger">Burger Restaurant</option>
+            <option value="pasta">Pasta Restaurant</option>
+        </select>
+        <button onclick="orderFood()">View Menu & Order</button>
+    </div>
+
+    <script>
+        function orderFood() {
+            let selectedRestaurant = document.getElementById("restaurant").value;
+            alert("You selected: " + selectedRestaurant + "\nRedirecting to the menu...");
+        }
+    </script>
+</body>
+</html>

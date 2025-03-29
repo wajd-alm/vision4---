@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Seat - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: url('Wajdp.png') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        .container {
+            margin-top: 65vh;
+            transform: translateY(-65%);
+        }
+        button {
+            display: block;
+            width: 250px;
+            padding: 15px;
+            margin: 15px auto;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .tickets { background-color: green; color: white; }
+        .restaurants { background-color: orange; color: white; }
+        .restrooms { background-color: purple; color: white; }
+        .match-stats { background-color: red; color: white; }
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <button class="tickets" onclick="window.location.href='tickets.html'">Tickets</button>
+        <button class="restaurants" onclick="window.location.href='restaurants.html'">Restaurants</button>
+        <button class="restrooms" onclick="window.location.href='restrooms.html'">Restrooms</button>
+        <button class="match-stats" onclick="window.location.href='match-stats.html'">Match Stats</button>
+    </div>
+
+</body>
+</html>
