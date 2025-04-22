@@ -1,50 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Seat - Home</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background: url('Wajdp.png') no-repeat center center fixed;
-            background-size: cover;
-            color: white;
-        }
-        .container {
-            margin-top: 65vh;
-            transform: translateY(-65%);
-        }
-        button {
-            display: block;
-            width: 250px;
-            padding: 15px;
-            margin: 15px auto;
-            font-size: 18px;
-            font-weight: bold;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .tickets { background-color: green; color: white; }
-        .restaurants { background-color: orange; color: white; }
-        .restrooms { background-color: purple; color: white; }
-        .match-stats { background-color: red; color: white; }
-        button:hover {
-            opacity: 0.8;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Seat - Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: url('Wajdp.png') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    .container {
+      margin-top: 65vh;
+      transform: translateY(-65%);
+    }
+    button {
+      display: block;
+      width: 250px;
+      padding: 15px;
+      margin: 15px auto;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .tickets { background-color: green; color: white; }
+    .restaurants { background-color: orange; color: white; }
+    .restrooms { background-color: purple; color: white; }
+    .match-stats { background-color: red; color: white; }
+    button:hover { opacity: 0.8; }
+
+    .audio-section {
+      margin-top: 50px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 15px;
+      width: 90%;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    audio {
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    h2, p { color: white; }
+  </style>
 </head>
 <body>
 
-    <div class="container">
-        <button class="tickets" onclick="window.location.href='tickets.html'">Tickets</button>
-        <button class="restaurants" onclick="window.location.href='restaurants.html'">Restaurants</button>
-        <button class="restrooms" onclick="window.location.href='restrooms.html'">Restrooms</button>
-        <button class="match-stats" onclick="window.location.href='match-stats.html'">Match Stats</button>
-    </div>
+  <div class="container">
+    <button class="tickets" onclick="window.location.href='tickets.html'">Tickets</button>
+    <button class="restaurants" onclick="window.location.href='restaurants.html'">Restaurants</button>
+    <button class="restrooms" onclick="window.location.href='restrooms.html'">Restrooms</button>
+    <button class="match-stats" onclick="window.location.href='match-stats.html'">Match Stats</button>
+  </div>
+
+  <div class="audio-section">
+    <h2>استمع إلى نبذة عن المشروع</h2>
+    <p>اختر اللغة:</p>
+
+    <p>العربية:</p>
+    <audio controls>
+      <source src="audio/arabic.mp3" type="audio/mpeg">
+      متصفحك لا يدعم تشغيل الصوت.
+    </audio>
+
+    <p>English:</p>
+    <audio controls>
+      <source src="audio/english.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>中文 (Chinese):</p>
+    <audio controls>
+      <source src="audio/chinese.mp3" type="audio/mpeg">
+      您的浏览器不支持音频播放。
+    </audio>
+
+    <p>Español (Spanish):</p>
+    <audio controls>
+      <source src="audio/spanish.mp3" type="audio/mpeg">
+      Su navegador no soporta el elemento de audio.
+    </audio>
+  </div>
 
 </body>
 </html>
