@@ -9,7 +9,6 @@
             background-image: url('Wajdp.png');
             background-size: cover;
             background-position: center;
-            background-repeat: no-repeat;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -19,31 +18,58 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            text-align: center;
+            justify-content: center;
             height: 100vh;
+            text-align: center;
         }
 
         h1 {
             font-size: 28px;
-            margin-top: 140px; /* رفع العنوان شوي */
             margin-bottom: 20px;
             color: white;
         }
 
-        img {
-            width: 500px;
-            height: auto;
-            border: 2px solid white;
-            border-radius: 8px;
-            box-shadow: 0 0 8px white;
-            margin-top: 20px;
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid white;
+            text-align: center;
+            color: white;
+        }
+
+        th {
+            background-color: #333;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Match Statistics</h1>
-        <img src="wajd11.jpg" alt="Match Image">
+        <table>
+            <tr>
+                <th>Team</th>
+                <th>Goals</th>
+                <th>Possession</th>
+                <th>Shots</th>
+            </tr>
+            <tr>
+                <td>Team A</td>
+                <td>2</td>
+                <td>55%</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Team B</td>
+                <td>1</td>
+                <td>45%</td>
+                <td>7</td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>
