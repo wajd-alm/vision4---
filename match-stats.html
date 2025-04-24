@@ -5,26 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Match Stats</title>
     <style>
-        body {
-            background-image: url('Wajdp.png');
-            background-size: cover;
-            background-position: center;
-            font-family: Arial, sans-serif;
+        html, body {
+            height: 100%;
             margin: 0;
             padding: 0;
         }
 
-        .container {
+        body {
+            background-image: url('Wajdp.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+        }
+
+        .container {
             text-align: center;
+            transform: translateY(100px); /* نزّل الصورة لنفس المستوى السابق */
         }
 
         .stats-image {
-            margin-top: 60px; /* نزل الصورة شوي */
             width: 500px;
             height: auto;
             border: 2px solid white;
