@@ -6,7 +6,7 @@
     <title>Restrooms</title>
     <style>
         html, body {
-            height: 100%; /* يخلي الخلفية تغطي الصفحة كلها */
+            height: 100%;
             margin: 0;
             padding: 0;
         }
@@ -17,14 +17,14 @@
             background-position: center;
             background-repeat: no-repeat;
             font-family: Arial, sans-serif;
+
+            display: flex;
+            align-items: center;  /* عمودي */
+            justify-content: center; /* أفقي */
         }
 
         .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             text-align: center;
-            margin-top: 220px; /* نزّل المحتوى تحت */
         }
 
         h1 {
